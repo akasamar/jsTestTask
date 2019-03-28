@@ -1,0 +1,52 @@
+Create in responsive design style a real-time data-driven widget for include it into any web page.
+This is a like "Real-Time Forex Quotes Widget", let it will named as Widget.
+
+IC Markets Widget (TEST TASK) requirements are (not in strict order, but important all together):
+
+1) Periodically request actual data from: http://webrates.truefx.com/rates/connect.html?f=csv
+2) Widget must automatically create data view elements (for example rows with cells, etc.) depends on received data (do not create html view part before data received)
+3) Develop and use only one re-usable javascript class for all records of received data (create needed properties and methods)
+4) Any of increased value should be on GREEN background color, decreased - on RED, in case if no changes - just BLACK text on initial background
+5) All data should represents on the target web page in sorted order (by symbol name)
+6) Update on the page ONLY really changed data (be ready to explain your implementation)
+7) Target html page will have a special designed container with class name "widget-container"
+8) Widget must be included into the target web page by using only one tag (<script>)
+9) If possible, do not use third-party libraries and frameworks (only ECMAScript 5, inline-css, html5)
+10) Test your result in all latest browsers (included IE9 in emulation mode, and mobile)
+11) Developed widget must successfully fill given container in properly way with the next requirements:
+
+- in case, if container has width >= 600px, represent data in format (like a table formatted list)
+  ---------------------------------------------------------------------------------
+  [forex symbol name] | [bid price] | [ask price] | [spread value] | [time of tick]
+  ---------------------------------------------------------------------------------
+
+
+- in case, if container has width >= 400px and < 600px, represent data like a table in format
+  --------------------------------------------------
+  [forex symbol name] | [bid price] | [spread value]
+                      | [ask price] | [time of tick]
+  --------------------------------------------------
+
+
+- in case, if container has width < 400px, represent data like a table in format
+  -------------------
+  [time of tick     ]
+  [forex symbol name]
+  [spread value     ]
+  [bid price        ]
+  [ask price        ]
+  -------------------
+
+
+*) Like a Bonus is: how you will prevent refresh on the page currently INVISIBLE data (in case, when container has a vertical 
+scroll and the some data can be outside from the view part of the screen), but refresh it imediately after data container will appear on the screen 
+(by change scroll postion, etc)
+
+**) As a test of the skills to use Google search: how would you do the continuation of the correct operation of the widget in the inactive tab of the browser, if such a task is set for you?
+
+NOTE: if you have any questions - you a free to contact me, but as for me it is necessary to understand the level of your independence.
+
+Please send you final, commented and tested results as soon as possible to my email: v.fedorov@icmarkets.com.au
+The results of the code review and implementation questions will necessarily be during the Skype interview.
+
+P.S. for * and **: Implementation is not required - enough verbal response at the interview))

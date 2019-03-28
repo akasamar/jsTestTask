@@ -1,0 +1,195 @@
+@media only screen and (min-width: 750px)
+{
+	.widget-container
+	{
+		width: 80vw;
+		min-width: 600px;
+		height: 230px;
+		outline-width: bold;
+		outline-color: grey;
+		outline-style: solid;
+		margin: 5rem auto;
+	}
+
+	div.inner1
+	{
+		order: 1;
+		flex: 1;
+	}
+	div.inner2
+	{
+		order: 2;
+		flex: 1;
+	}
+	div.inner3
+	{
+		order: 3;
+		flex: 1;
+	}
+	div.inner4
+	{
+		order: 4;
+		flex: 1;
+	}
+	div.inner5
+	{
+		order: 5;
+		flex: 1;
+	}
+
+	.mainblock
+	{
+		/*margin-bottom: 20px;*/
+	}
+
+	.one4two1, .one4two2
+	{
+		display: none;
+	}
+
+	.mainblock .inner2, .mainblock .inner3, .mainblock .inner4, .mainblock .inner5
+	{
+		display: block;
+	}
+
+	.one4two1 .inner2, .one4two1 .inner3, .one4two2 .inner4, .one4two2 .inner5
+	{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 750px)
+{
+	.widget-container
+	{
+		width: 80vw;
+		min-width: 600px;
+		height: 521px;
+		outline-width: bold;
+		outline-color: grey;
+		outline-style: solid;
+		margin: 5rem auto;
+		padding: 1px;
+	}
+
+	div.inner1
+	{
+		order: 1;
+		flex: 1;
+		margin-top: 11px;
+	}
+	div.inner2
+	{
+		order: 2;
+		flex: 1;
+	}
+	div.inner3
+	{
+		order: 3;
+		flex: 1;
+	}
+	div.inner4
+	{
+		order: 4;
+		flex: 1;
+	}
+	div.inner5
+	{
+		order: 5;
+		flex: 1;
+	}
+
+	.one4two1
+	{
+		order: 2;
+	}
+
+	.one4two2
+	{
+		order: 3;
+	}
+
+	.mainblock
+	{
+		margin-bottom: 30px;
+	}
+
+	.one4two1, .one4two2
+	{
+		flex: 2;
+		flex-direction: column;
+	}
+
+	.mainblock .inner2, .mainblock .inner3, .mainblock .inner4, .mainblock .inner5
+	{
+		display: none;
+	}
+
+	.one4two1 .inner2, .one4two1 .inner3, .one4two2 .inner4, .one4two2 .inner5
+	{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 480px)
+{
+	.widget-container
+	{
+		width: 80vw;
+		min-width: 350px;
+		height: 1352px;
+		outline-width: bold;
+		outline-color: grey;
+		outline-style: solid;
+		margin: 5rem auto;
+	}
+
+	div.inner1
+	{
+		order: 2;
+		width: 100%;
+	}
+	div.inner2
+	{
+		order: 4;
+		width: 100%;
+	}
+	div.inner3
+	{
+		order: 5;
+		width: 100%;
+	}
+	div.inner4
+	{
+		order: 3;
+		width: 100%;
+	}
+	div.inner5
+	{
+		order: 1;
+		width: 100%;
+		background-color: grey;
+	}
+
+	.mainblock
+	{
+		flex-direction: column;
+		margin-bottom: 115px;
+	}
+
+	.one4two1, .one4two2
+	{
+		display: none;
+	}
+
+	.mainblock .inner2, .mainblock .inner3, .mainblock .inner4, .mainblock .inner5
+	{
+		display: block;
+	}
+
+	.one4two1 .inner2, .one4two1 .inner3, .one4two2 .inner4, .one4two2 .inner5
+	{
+		display: none;
+	}
+}
+
